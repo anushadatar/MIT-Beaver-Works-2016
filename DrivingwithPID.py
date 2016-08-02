@@ -3,7 +3,6 @@ import rospy, math
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Bool, Int32, Float32
 from PID import PIDClass
-import scanangle
 
 class pidDriver:
     def __init__(self):		
@@ -36,7 +35,13 @@ class pidDriver:
 		for i in range(855, 866):
 			self.scan2.append(msg.ranges[i]) # gets 100 degree scans and adds them to scan2
 		self.main(self.scan1, self.scan2)
-    
+    def scanangle(r1, r2, theta)
+    		theta = theta * (math.pi/180)
+		numerator = r1 * r2 * math.sin(theta)
+		denom_wo_sqrt = r1 ** 2 + r2 ** 2 + (-2*r1*r2*math.cos(theta))
+		denom = math.sqrt(denom_wo_sqrt)
+		d = numerator / denom
+		return d
 
     def main(self, scan1, scan2):
 		    self.error = 0
@@ -55,7 +60,7 @@ class pidDriver:
 
 		    if meanD_x != 0 and meanD_y != 0: # checks if vals are good
 			#print ("started trig")
-			d_actual = driveTrig.findDist(meanD_x, meanD_y, 10)
+			d_actual = scanangle(meanD_x, meanD_y, 10)
 
 		    else:
 			return
