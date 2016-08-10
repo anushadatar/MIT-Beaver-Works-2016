@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mit-beaver-works-2016 by anushadatar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Mit-beaver-works-2016</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/anushadatar/MIT-Beaver-Works-2016" class="btn">View on GitHub</a>
+      <a href="https://github.com/anushadatar/MIT-Beaver-Works-2016/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/anushadatar/MIT-Beaver-Works-2016/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="1----------project-overview-the-mit-beaver-works-summer-institute-grants-high-school-students-the-unique-opportunity-to-learn-about-programming-and-robotics-on-the-racecar-platform-with-the-guidance-of-mit-faculty" class="anchor" href="#1----------project-overview-the-mit-beaver-works-summer-institute-grants-high-school-students-the-unique-opportunity-to-learn-about-programming-and-robotics-on-the-racecar-platform-with-the-guidance-of-mit-faculty" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>1.          Project Overview: The MIT Beaver Works Summer Institute grants high school students the unique opportunity to learn about programming and robotics on the RACECAR platform with the guidance of MIT faculty.</strong>
+</h1>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Introduction:</strong>
+</h2>
+
+<p>The MIT Beaver Works Summer Institute is a four-week summer program for students interested and experienced in computer science and engineering. The logistical and instructional group represents a joint effort of MIT Lincoln Laboratory, a federally funded engineering laboratory, and MIT College of Engineering (primarily the electrical engineering, computer science and aeronautics/astronautics departments). These two entities form Beaver Works, an organization working to give MIT students chances to work on real problems. Over the four weeks of the Beaver Works summer program, students learn material based on MIT's RACECAR IAP and MIT's Robotics Science and Systems course. The labs are implemented on the RACECAR, a 1/10 scaled vehicle featuring an advanced LIDAR, ZED stereo camera, Jetson Supercomputer, and an IMU. </p>
+
+<h2>
+<a id="daily-structure" class="anchor" href="#daily-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Daily Structure:</strong>
+</h2>
+
+<p>The structure of the Beaver Works program reflects the depth and variety of the engineering field. Students spend the majority of each day in class, learning about ROS (the Robot Operating System), the Python programming language, and robotics. Most mornings include lectures from either MIT staff or invited lecturers from Continental Corporation or NASA's Jet Propulsion Laboratory, and then the afternoons involve teams of five students working through inquiry-based labs with the RACECAR. Generally, each week culminates in a final challenge where the winning teams are rewarded, and the program itself concludes with a weeklong curse challenge. To enrich course materials, guest lecturers from corporations, MIT Lincoln Labs, or MIT itself give seminars daily. Lastly, two hours of each week are dedicated to a communications and teamwork class. </p>
+
+<h2>
+<a id="class-content" class="anchor" href="#class-content" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Class Content:</strong>
+</h2>
+
+<p>In terms of the class material, each week of the Beaver Works program centers around a certain theme, and the course challenge reflects this. The first week is dedicated to getting the robot to move effectively: the ending challenge features a drag race where hitting the wall (which would surely happen without a finely tuned control system) meant elimination. The next week involves computer vision, so the week ends with a timed challenge where cars must drive up to a colored marker and make decisions based on the color of the marker. Week three involves mapping, localization, and reactive planning. The weekly challenge requires the robot to explore the space without hitting any obstacles and recording images of each marker it encounters. These three weekly challenges are directly applied to the competition in the fourth week, where robots must follow a corridor, perhaps use localization and mapping techniques, detect images, and avoid obstacles.</p>
+
+<h1>
+<a id="2-----------a-week-1-the-first-week-involved-using-simple-control-systems-so-that-the-robot-could-participate-in-a-drag-race-on-the-final-day" class="anchor" href="#2-----------a-week-1-the-first-week-involved-using-simple-control-systems-so-that-the-robot-could-participate-in-a-drag-race-on-the-final-day" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>2.           A. Week 1: The first week involved using simple control systems so that the robot could participate in a drag race on the final day.</strong>
+</h1>
+
+<h2>
+<a id="goal" class="anchor" href="#goal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Goal:</strong>
+</h2>
+
+<p>The overall goal of the week was to apply concepts from lecture to a drag race, where robots follow a wall as effectively as possible.</p>
+
+<h2>
+<a id="approach" class="anchor" href="#approach" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Approach:</strong>
+</h2>
+
+<p>As this was the first week and the RACECAR platform was new to us, we approached the problem by learning as much as possible and then closely following the labs given to guide us. </p>
+
+<h2>
+<a id="process" class="anchor" href="#process" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Process:</strong>
+</h2>
+
+<p>On the first day of the program, we learned basic procedures, such as the components of the cars, how to connect to the robot, and how to launch simple drive commands. After the first day, essential topics were reviewed: we built Python chatbots and then converted said chatbots into ROS nodes.Below is a diagram depict how ROS nodes use messages and topics to communicate.
+<img src="https://i.gyazo.com/dc5ca1e1bb50cf64b287d4d5f784c091.png" alt="ros pub and sub">
+Figure 1: Block Diagram of ROS Publisher and Subscriber Nodes</p>
+
+<p>This, along with other labs done primarily as homework, solidified our basic understanding of Linux, the Robot Operating System, and Python. On the third and fourth day, a NASA JPL employee taught us about, control systems in lecture. We first began with open-loop control, which does not include feedback, as depicted below.
+<img src="https://i.gyazo.com/07efc58eea65337b7274f93dad876e9f.png" alt="open loop control block diagram">
+Figure 2: Block Diagram of Open-Loop Control Systems</p>
+
+<p>However, in our autonomous vehicles, we would be using closed-loop control, which involves sensor usage and state estimation, as shown here.
+<img src="https://i.gyazo.com/349a84d923e20d48cdca6a92e3bde204.png" alt="closed loop control block diagram">
+Figure 3: Block Diagram of Open-Loop Control Systems</p>
+
+<p>Next, we moved to autonomous control with the simple bang-bang controller (pictured below, this controller relies on simple if-then control statements to rudimentarily correct errors of the vehicle). This was then applied to the RACECAR: we used trigonometry to determine how to accurately determine the LIDAR’s distance to the wall, and then applied both control techniques. We started by using the bang-bang approach, the robot attempted to follow the wall, but it did not allow for nuanced adjustments and was largely ineffective. We then learned about and implemented the PID controller. PID stands for Proportional, Integral, Derivative, and this approach allows the robot to correct for mistakes based on the magnitude of the error, with additional adjustments based on the derivative (slope) and integral (summation) of the error. Below is a graphical representation of this concept.</p>
+
+<p><img src="https://i.gyazo.com/f89fe6fc6a5a598d860c0fe13decc439.png" alt="PID Graph">
+Figure 4: Effect of PID Constants on Oscillation <sup>1</sup></p>
+
+<p>While an overview of the calculations required for the involved concepts was described, in practice they were empirically determined through careful testing and tuning. First, the proportional constant was determined by increasing the value until the car began to oscillate. Then, a derivative term was added in order to control this oscillation. We continued to tune this controller until the final race for the week. </p>
+
+<h2>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results:</strong>
+</h2>
+
+<p>Our results were relatively successful: even when our car was set at varied angles, it did not hit the wall, and it traveled quickly. However, our controller could have been implemented more effectively: we fell short of the bronze medal by fractions of a second.</p>
+
+<h1>
+<a id="b--week-2-the-second-week-involved-using-python-libraries-and-the-zed-stereo-camera-to-allow-the-robot-to-autonomously-make-decisions" class="anchor" href="#b--week-2-the-second-week-involved-using-python-libraries-and-the-zed-stereo-camera-to-allow-the-robot-to-autonomously-make-decisions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>B.  Week 2: The second week involved using Python libraries and the ZED Stereo Camera to allow the robot to autonomously make decisions.</strong>
+</h1>
+
+<h2>
+<a id="goal-1" class="anchor" href="#goal-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Goal:</strong>
+</h2>
+
+<p>The objective, as depicted below, was to be able to detect colored markers and program the robot to follow either the left or right wall (which had been implemented during week one) based on the color of the marker. 
+<img src="https://i.gyazo.com/4662014e48a8a2bfd49e73d3e805b257.png" alt="Friday challenge">
+Figure 4: Week 2 Design Challenge<sup>2</sup></p>
+
+<h2>
+<a id="approach-1" class="anchor" href="#approach-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Approach:</strong>
+</h2>
+
+<p>This week, my team divided the problem into several sections: recognizing and detecting the blob, ensuring that the detected blob is the marker, making the decision accordingly, and following the wall. As with the week before, lectures and labs guided this process. </p>
+
+<h2>
+<a id="process-1" class="anchor" href="#process-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Process:</strong>
+</h2>
+
+<p>On Monday, we practiced using Python tools to convert and manipulate images. One important  feature was the command to convert an image from RGB (red green blue) to HSV (hue saturation value) color spaces, which are depicted below. This modification allowed the robot to recognize the changes in color regardless of the lighting. We also wrote code for segmentation and a simple blob detector which was tested with a bag file provided by the instructors
+<img src="https://i.gyazo.com/558bd881c08d3c3bc85e9568712eb0af.png" alt="colorspaces">
+Figure 6: RGB and HSV Colorspaces<sup>3</sup></p>
+
+<p>Afterwards, we configured the ZED stereo camera on the RACECAR For the following three days, lectures focused primarily on advanced computer vision techniques. Meanwhile, we prepared for the weekly challenge during the lab periods. To achieve this goal, we simply went through the functions: we started by using the OpenCV FindContours() function to detect blobs that were red or green (as these were the colors used in the challenges). This took a great deal of testing in order to determine the optimal HSV ranges, which ended up being [60-77,100-255,100-255] for green and [0-10,130-255,130-255] for green. Next, we wrote a function called CheckRect() which would determine that the detected blob was the largest one present, that the figure was a rectangle, and the color of the blob. This was relatively straightforward, and mainly required testing with the given bag file. Next, our function WallDecider() determined whether to turn left or right depending on the color detected. As the last portion was simply following a curved wall and had been implemented a week before, we simply used and re-tuned a teammate's for the drag race. </p>
+
+<h2>
+<a id="results-1" class="anchor" href="#results-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results:</strong>
+</h2>
+
+<p>The results were not favorable. While the robot did drive up to and correctly detect the color, the robot turned in the incorrect direction, which was due to a sign error. Our wall follower also needed more tuning. For these reasons, we joined the large group of teams whose robot was unable to complete the challenge. </p>
+
+<h1>
+<a id="c-week-3-week-3-involved-programming-the-robot-to-autonomously-navigate-its-environment-through-both-reactive-planning-and-localization-and-mapping" class="anchor" href="#c-week-3-week-3-involved-programming-the-robot-to-autonomously-navigate-its-environment-through-both-reactive-planning-and-localization-and-mapping" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>C. Week 3: Week 3 involved programming the robot to autonomously navigate its environment through both reactive planning and localization and mapping.</strong>
+</h1>
+
+<h2>
+<a id="goal-" class="anchor" href="#goal-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>*<em>Goal: *</em>
+</h2>
+
+<p>The goal for week 3 was to program the robot to explore the space without colliding with obstacles, detect and screenshot blobs, and recognize images. We also learned about mapping and localization.</p>
+
+<h2>
+<a id="approach-2" class="anchor" href="#approach-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Approach:</strong>
+</h2>
+
+<p>As this challenge was so multidimensional, my team focused on applying past concepts and combining them to meet the demands of this challenge. We also divided this challenge into several parts.</p>
+
+<h2>
+<a id="process-2" class="anchor" href="#process-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Process:</strong>
+</h2>
+
+<p>The first day of this week was focused on mapping techniques. In lecture, we learned about SLAM (Simultaneous Localization and Mapping) algorithms and different types of autonomous robots. The robot was then used to create a map of the environment, but this image was distorted and unusable. We then continued to learn about different localization techniques throughout the week. Generally, robots make use of both exteroceptive (external) and proprioceptive (internal) sensors to gauge its location on a map in terms of landmarks and its own movement. More advanced algorithms also include measurements regarding the margin of error in this judgement and the robot’s intended trajectory within the map. An example of AMCL (Adaptive Monte Carlo Localization), which employs particle filtering, is below.
+<img src="https://i.gyazo.com/d36d8f23f905b4bb506a9a4699550da0.png" alt="AMCL">
+Figure 7: An Image of AMCL Localization Used in Simulation<sup>4</sup> </p>
+
+<p>Even though lectures were focused on mapping, labs were focused on reactive planning. We used several algorithms to program the robot to be able to avoid obstacles. Initially, we began with simply programming the robot to follow the empty space: the robot would use the laser scanner to scan its surrounding, divide the scan into windows, and drive into the window with the fewest obstacles. However, this proved ineffective when faced with intersections, where it would attempt to go in two different directions as the windows shifted.</p>
+
+<p>Therefore, we then implemented the potential fields algorithm to improve the robot’s performance. This approach is modeled after physics: the robot is programmed as a charged particle which is repelled by obstacles, as shown below. This was significantly more effective than before: the robot rarely crashed into walls and obstacles. When there were issues, they were generally due to clashing with the robot’s safety controller, which caused it to back away from any obstacle in front of it as well.
+<img src="https://i.gyazo.com/c7dc820cf85720a0f05fe28e9f5c9b7e.png" alt="Potential fields">
+Figure 8: Potential Fields<sup>5</sup></p>
+
+<p>In addition to avoiding walls, our team also perfected past blob detection code, worked on scripts to collect screenshots and save and recognize images. Most of this was done through OpenCV commands.</p>
+
+<h2>
+<a id="results-2" class="anchor" href="#results-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results:</strong>
+</h2>
+
+<p>Unfortunately, the code for screenshotting and saving images did not work for our team. Because we could not complete the function required to gain points, and there was a penalty for collisions, we decided to take a score of zero for the event.</p>
+
+<h1>
+<a id="d-week-4-most-of-week-4-was-dedicated-to-the-course-challenge-two-tech-challenges-and-the-grand-prix" class="anchor" href="#d-week-4-most-of-week-4-was-dedicated-to-the-course-challenge-two-tech-challenges-and-the-grand-prix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>D. Week 4: Most of Week 4 was dedicated to the Course Challenge: two Tech Challenges and the Grand Prix.</strong>
+</h1>
+
+<h2>
+<a id="goal-2" class="anchor" href="#goal-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Goal:</strong>
+</h2>
+
+<p>The goal of the fourth week was to prepare for the two tech challenges (exploring space and making the correct turn) and also prepare for the final race.
+Approach:
+Our team first worked on the two technical challenges and then focused all efforts on the final race.</p>
+
+<h2>
+<a id="process-3" class="anchor" href="#process-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Process:</strong>
+</h2>
+
+<p>On Monday, we began with the first technical challenge, which was exploring the space and publishing screenshots of blob, similar to the week before. To explore the space, we tuned the potential fields algorithm and also integrated it with the built-in safety controller so that they would not crash. This ensured that the robot would not collide with obstacles. However, the rapid shifts in direction the robot experienced throughout this challenge put strain on the gears. To decrease the effects of this rapid acceleration, we wrote a filter node that published to the navigation stack (and then the potential fields algorithm published to the filter node). This filter node slowly incremented large changes in the speed to ensure that the robot would smoothly change directions and move forward. After finishing this node by perfecting the image detection and recognition by tuning via a rosbag file, we worked on the second technical challenge which involved making the correct turn at a colored marker, and we were generally successful with this through the implementation of past code. Finally, we prepared for the time trials and the Grand Prix. My team decided to implement a wall follower for the time trials, and spent most of the week tuning it to handle tight turns. We also wrote a potential fields algorithm to handle the races with other cars. </p>
+
+<h2>
+<a id="results-3" class="anchor" href="#results-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Results:</strong>
+</h2>
+
+<p>Unfortunately, tuning issues due to a speed increase made our wall follower largely ineffective, and we did not place in the time trials or the final race. However, our robot was still able to make it around the track and avoid obstacles.</p>
+
+<h1>
+<a id="3-technical-conclusions" class="anchor" href="#3-technical-conclusions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>3. Technical Conclusions:</strong>
+</h1>
+
+<p>Overall, the Beaver Works Summer Program was rich with new technical experiences. This course provided exposure to concepts as fundamental as Python and ROS and more complex topics such as computer vision algorithms, mapping and localization, and reactive planning techniques. Each weekly challenge allowed for combining this information into a visible algorithm. In the first week, our program was moderately successful: while we did not win the competition, we completed the challenge. However, in the second week, my group experienced failure. Our robot had issues with several problems, such as detecting colors in various lighting situations, transitioning from turning to following the wall, and maintaining adequate parameters. Unfortunately, the third week was more unsuccessful as software issues prevented our robot from competing: this was due to misguided placement of files. These very fixable problems imply that while theory and planning is essential to approaching technical challenges, testing and tuning are of equal value and must be regarded accordingly. This really resonated during the final race, where tuning errors cost us the possibility of success. </p>
+
+<h1>
+<a id="4-personal-conclusions" class="anchor" href="#4-personal-conclusions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. <strong>Personal Conclusions:</strong>
+</h1>
+
+<p>Beaver Works presented me with a great deal of technical and personal challenges at an unprecedented rate. This shift allowed me to consider my work, my interactions with others, and myself from a unique frame.
+The rate at which the program material was presented forced me to consider my work from a standpoint of learning, not completion. Prior to this program, I often did not care if my program was "spaghetti code" or was left largely uncommented. Here, I discovered that such a haphazard approach simply would not work because of the difficulty of and teamwork involved in course material. Suddenly, it was not sufficient or valuable to simply meet the objective:success required thorough application of concepts described in lecture. Therefore, I have begun to view my work from its value as a learning experience instead of just whether or not it runs and works.
+Working in teams at Beaver Works has allowed me to reconsider the different ways through which I can contribute to a team. Initially, it was very difficult for me to consider the necessity for balance on my teams, especially since I was by far not the most experienced person at the program. Therefore, it was difficult to allocate work for both efficiency and learning. However, through the shifting of teams, I have taken on nearly every possible role and have gained valuable insights on leadership: regardless of what appears to be one's skill set, everyone has value. Unless everyone is working to at least a large proportion of their potential, the team is unlikely to succeed. 
+The new experiences Beaver Works has granted me has resulted in my reconsideration of how I view myself. I've always considered myself a very technical person, and my leadership (on my robotics team, etc.) has championed efficiency. Through the shifting teams, seminars, and challenges at Beaver Works, I have realized that optimal teams require all individuals to care deeply about success. This  reality implies that I must ensure my actions reflect the passion for robotics and engineering that I know I have. By doing so, I can ensure that I can achieve my goals and also learn and experience as much as possible. Beaver Works has reframed my view of work, teams, and myself, as I now consider the importance of nuance, compassion, and self- awareness.</p>
+
+<h1>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>References:</strong>
+</h1>
+
+<p>1, Schmid, Christian (2005, May 9). Advantages and Disadvantages of Different Types of 
+Controllers. Retrieved from <a href="http://virtual.cvut.cz/course/syscontrol/node63.html">http://virtual.cvut.cz/course/syscontrol/node63.html</a>. 
+2. BWI Staff (2016, July). Friday Challenge: Make the Correct Turn. Retrieved from <a href="https://docs.google.com/document/d/1tuRuW7xBLRTJqUfpCnNMH-ktWLft_vGdvnr7RT1cgk8/edit#">https://docs.google.com/document/d/1tuRuW7xBLRTJqUfpCnNMH-ktWLft_vGdvnr7RT1cgk8/edit#</a>.
+3. Vossen, Chris(2012, April 26). Can You Paint with All the Colors of the Wind? Ledworks Can. Retrieved from <a href="http://www.leadwerks.com/werkspace/blog/94/entry-880-can-you-paint-with-all-the-colors-of-the-wind-leadwerks-can/">http://www.leadwerks.com/werkspace/blog/94/entry-880-can-you-paint-with-all-the-colors-of-the-wind-leadwerks-can/</a>. 
+4. Mathworks, Inc (2016). MATLAB Documentation, Retrieved from <a href="http://www.mathworks.com/help/examples/robotics_product/index.html?s_tid=gn_loc_drop">http://www.mathworks.com/help/examples/robotics_product/index.html?s_tid=gn_loc_drop</a><br>
+5. /Safadi, Hanni(2007, April 18). Local Path Planning Using Potential Field. Retrieved from <a href="http://cs.mcgill.ca/%7Ehsafad/robotics/">http://cs.mcgill.ca/~hsafad/robotics/</a>. </p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/anushadatar/MIT-Beaver-Works-2016">Mit-beaver-works-2016</a> is maintained by <a href="https://github.com/anushadatar">anushadatar</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
